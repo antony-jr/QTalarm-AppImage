@@ -1,0 +1,3 @@
+[submodule "QTalarm"]
+	path = QTalarm
+	url = https://github.com/CountMurphy/QTalarm

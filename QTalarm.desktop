@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=QTalarm
+Type=Application
+Exec=qtalarm
+Icon=qtalarm
+Terminal=false
+Categories=System;
+Comment=Alarm clock for Computers.
