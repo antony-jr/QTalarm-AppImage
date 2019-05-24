@@ -26,7 +26,7 @@ script:
   - ./linuxdeploy-x86_64.AppImage --appdir=appdir -d appdir/usr/share/applications/QTalarm.desktop -p qt
   - wget -O updatedeployqt-continuous-x86_64.AppImage "https://git.io/fj4CH"
   - chmod +x updatedeployqt-continuous-x86_64.AppImage
-  - ./updatedeployqt-continuous-x86_64.AppImage AppImage appdir/usr/plugins/platforms/libqxcb.so
+  - ./updatedeployqt-continuous-x86_64.AppImage AppImage appdir/usr/plugins/platforms/libqxcb.so -l appdir/usr/lib 
   - export UPDATE_INFORMATION="gh-releases-zsync|antony-jr|QTalarm-AppImage|continuous|QTalarm*-x86_64.AppImage.zsync"
   - ./linuxdeploy-x86_64.AppImage --appdir=appdir --output appimage
 
