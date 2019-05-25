@@ -29,7 +29,6 @@ script:
   - ./updatedeployqt-continuous-x86_64.AppImage AppImage appdir/usr/plugins/platforms/libqxcb.so -l appdir/usr/lib 
   - wget "https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage"
   - chmod +x appimagetool-x86_64.AppImage 
-  - export VERSION=continuous
   - ./appimagetool-x86_64.AppImage -g --no-appstream appdir 
 
 after_success:
