@@ -27,8 +27,10 @@ script:
   - wget -O updatedeployqt-continuous-x86_64.AppImage "https://git.io/fj4CH"
   - chmod +x updatedeployqt-continuous-x86_64.AppImage
   - ./updatedeployqt-continuous-x86_64.AppImage AppImage appdir/usr/plugins/platforms/libqxcb.so -l appdir/usr/lib 
-  - export UPDATE_INFORMATION="gh-releases-zsync|antony-jr|QTalarm-AppImage|continuous|QTalarm*-x86_64.AppImage.zsync"
-  - ./linuxdeploy-x86_64.AppImage --appdir=appdir --output appimage
+  - wget "https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage"
+  - chmod +x appimagetool-x86_64.AppImage 
+  - export VERSION=continuous
+  - ./appimagetool-x86_64.AppImage -g --no-appstream appdir 
 
 after_success:
   - wget "https://github.com/probonopd/uploadtool/raw/master/upload.sh"
