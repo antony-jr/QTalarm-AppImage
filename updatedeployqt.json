@@ -1,6 +1,6 @@
 {
    "name" : "QTalarm AppImage",
-   "version" : "v0.0.2",
+   "version" : "v0.0.3",
    "qt-version" : "5.9.3",
    "bridge" : "AppImageUpdater",
    "manual-update-check" : {
