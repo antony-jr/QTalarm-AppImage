@@ -30,6 +30,8 @@ script:
   - wget "https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage"
   - chmod +x appimagetool-x86_64.AppImage 
   - ./appimagetool-x86_64.AppImage -g --no-appstream appdir 
+  - rm -rf linuxdeploy*.AppImage appimagetool-x86_64.AppImage
+  - rm -rf updatedeployqt-x86_64.AppImage
 
 after_success:
   - wget "https://github.com/probonopd/uploadtool/raw/master/upload.sh"
