@@ -33,7 +33,8 @@ script:
 
 after_success:
   - wget "https://github.com/probonopd/uploadtool/raw/master/upload.sh"
-  - bash upload.sh QTalarm*.AppImage *zsync
+  - ls
+  - bash upload.sh *AppImage *zsync
   
 branches:
   except:
